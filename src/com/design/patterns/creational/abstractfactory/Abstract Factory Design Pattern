@@ -1,0 +1,18 @@
+In 	Factory design pattern we have a single Factory class. This factory class returns different subclasses 
+based on the input provided and factory class uses if-else or switch statement to achieve this.
+
+In the Abstract Factory pattern, we get rid of if-else block and have a factory class for each sub-class. 
+Then an Abstract Factory class that will return the sub-class based on the input factory class.
+
+Abstract Factory Design Pattern Benefits:
+
+1.	Abstract Factory design pattern provides approach to code for interface rather than implementation.
+2.	Abstract Factory pattern is “factory of factories” and can be easily extended to accommodate more products, 
+	for example we can add another sub-class Laptop and a factory LaptopFactory.
+3.	Abstract Factory pattern is robust and avoid conditional logic of Factory pattern.
+
+Abstract Factory Design Pattern Examples in JDK
+
+1.	javax.xml.parsers.DocumentBuilderFactory#newInstance()
+2.	javax.xml.transform.TransformerFactory#newInstance()
+3.	javax.xml.xpath.XPathFactory#newInstance()
